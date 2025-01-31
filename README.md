@@ -49,10 +49,10 @@ Esta aplicación es un proyecto web desarrollado con React que permite a los usu
 ## Capturas de Pantalla
 
 ### Vista completa de la aplicación
-![Vista completa](public/react1.png)
+![Vista completa](public/React1.png)
 
 ### Aplicación con dos favoritos agregados
-![Dos favoritos](public/react2.png)
+![Dos favoritos](public/React2.png)
 
 
 ---
