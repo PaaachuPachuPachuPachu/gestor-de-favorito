@@ -45,6 +45,16 @@ Esta aplicación es un proyecto web desarrollado con React que permite a los usu
    ```
 5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
+
+## Capturas de Pantalla
+
+### Vista completa de la aplicación
+![Vista completa](public/react1.png)
+
+### Aplicación con dos favoritos agregados
+![Dos favoritos](public/react2.png)
+
+
 ---
 
 ## Tecnologías utilizadas

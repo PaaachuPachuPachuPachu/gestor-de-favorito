@@ -3,11 +3,19 @@ import Header from './components/Header';
 import AgregarFavorito from './components/AgregarFavorito';
 import Favoritos from './components/Favoritos';
 import Footer from './components/Footer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 
 function App() {
     //Definir el estado para los favoritos
-    const [favoritos, setFavoritos] = useState([]);
+    const [favoritos, setFavoritos] = useState(() => {
+      const favoritosGuardados = localStorage.getItem('favoritos');
+      return favoritosGuardados ? JSON.parse(favoritosGuardados) : [];
+    });
+
+    useEffect(() => {
+      localStorage.setItem('favoritos', JSON.stringify(favoritos));
+    }, [favoritos]);
     
     //Funcion para agregar un nuevo favorito
     const agregarFavorito = (nuevoFavorito) => {
